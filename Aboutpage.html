@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hospital</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="./js/about.js"></script>
+</head>
+<body>
+    <header>
+        <h1>About Our Hospital</h1>
+    </header>
+    <section>
+        <h2>Our Mission</h2>
+        <p>To provide compassionate, accessible, high-quality, and cost-effective healthcare to our community.</p>
+
+        <h2>Our Vision</h2>
+        <p>To be the leading healthcare provider in the region, recognized for excellence in patient care, innovation, and community service.</p>
+
+        <h2>Services Offered</h2>
+        <ul>
+            <li>Emergency Care</li>
+            <li>Outpatient Services</li>
+            <li>Inpatient Services</li>
+            <li>Surgical Procedures</li>
+            <li>Diagnostic Imaging</li>
+            <li>Laboratory Services</li>
+            <li>Rehabilitation and Physical Therapy</li>
+            <li>Specialized Clinics (Cardiology, Neurology, Pediatrics, etc.)</li>
+        </ul>
+
+        <div class="statistics">
+            <h2>Our Statistics</h2>
+            <div><strong>Years of Service:</strong> 25+</div>
+            <div><strong>Patients Treated Annually:</strong> 50,000+</div>
+            <div><strong>Doctors and Specialists:</strong> 200+</div>
+            <div><strong>Surgeries Performed Annually:</strong> 5,000+</div>
+        </div>
+
+        <div class="team">
+            <h2>Meet Our Medical Team</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Specialization</th>
+                        <th>Experience (Years)</th>
+                        <th>Education</th>
+                        <th>Certifications</th>
+                        <th>Languages Spoken</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. John Smith</td>
+                        <td>Cardiologist</td>
+                        <td>15</td>
+                        <td>MD, Harvard Medical School</td>
+                        <td>Board Certified in Cardiology</td>
+                        <td>English, Spanish</td>
+                        <td>john.smith@hospital.com</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Jane Doe</td>
+                        <td>Pediatrician</td>
+                        <td>10</td>
+                        <td>MD, Stanford University</td>
+                        <td>Fellow of the American Academy of Pediatrics</td>
+                        <td>English, Mandarin</td>
+                        <td>jane.doe@hospital.com</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Emily Johnson</td>
+                        <td>Neurologist</td>
+                        <td>12</td>
+                        <td>MD, Johns Hopkins University</td>
+                        <td>Board Certified in Neurology</td>
+                        <td>English, French</td>
+                        <td>emily.johnson@hospital.com</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Michael Brown</td>
+                        <td>Surgeon</td>
+                        <td>20</td>
+                        <td>MD, Mayo Clinic Alix School of Medicine</td>
+                        <td>Fellow of the American College of Surgeons</td>
+                        <td>English, Arabic</td>
+                        <td>michael.brown@hospital.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name" data-name="Dr. John Smith" data-specialization="Cardiologist" data-experience="15" data-education="MD, Harvard Medical School" data-certifications="Board Certified in Cardiology" data-languages="English, Spanish" data-contact="john.smith@hospital.com">Dr. John Smith</td>
+                </tr>
+                <tr>
+                    <td class="name" data-name="Dr. Jane Doe" data-specialization="Pediatrician" data-experience="10" data-education="MD, Stanford University" data-certifications="Fellow of the American Academy of Pediatrics" data-languages="English, Mandarin" data-contact="jane.doe@hospital.com">Dr. Jane Doe</td>
+                </tr>
+                <tr>
+                    <td class="name" data-name="Dr. Emily Johnson" data-specialization="Neurologist" data-experience="12" data-education="MD, Johns Hopkins University" data-certifications="Board Certified in Neurology" data-languages="English, French" data-contact="emily.johnson@hospital.com">Dr. Emily Johnson</td>
+                </tr>
+                <tr>
+                    <td class="name" data-name="Dr. Michael Brown" data-specialization="Surgeon" data-experience="20" data-education="MD, Mayo Clinic Alix School of Medicine" data-certifications="Fellow of the American College of Surgeons" data-languages="English, Arabic" data-contact="michael.brown@hospital.com">Dr. Michael Brown</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 id="popup-name"></h2>
+        <p><strong>Specialization:</strong> <span id="popup-specialization"></span></p>
+        <p><strong>Experience:</strong> <span id="popup-experience"></span> years</p>
+        <p><strong>Education:</strong> <span id="popup-education"></span></p>
+        <p><strong>Certifications:</strong> <span id="popup-certifications"></span></p>
+        <p><strong>Languages Spoken:</strong> <span id="popup-languages"></span></p>
+        <p><strong>Contact:</strong> <span id="popup-contact"></span></p>
+    </div>
+</div>
+
+
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">
+                <h3>What should I bring for my first appointment?</h3>
+                <p>Please bring your insurance card, a valid ID, and any medical records related to your condition.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I schedule an appointment?</h3>
+                <p>You can schedule an appointment by calling our front desk or using our online appointment system on our website.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What insurance plans do you accept?</h3>
+                <p>We accept a variety of insurance plans. Please check our website or contact us for a complete list of accepted providers.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are your visiting hours?</h3>
+                <p>Our visiting hours are from 9:00 AM to 8:00 PM daily. Please check with specific departments for any variations.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you offer telehealth services?</h3>
+                <p>Yes, we offer telehealth services for certain appointments. Please inquire when scheduling your visit.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
