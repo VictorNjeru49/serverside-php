@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .appointmentform {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .appointment-info {
+    margin-top: 2rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Style for the Doctor Selection Section */
+.form-group label[for="doctor"] {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue-gray for contrast */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group select#doctor {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3498db; /* Light blue border */
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #34495e; /* Dark gray text */
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Change border color when the dropdown is focused */
+.form-group select#doctor:focus {
+  border-color: #2980b9; /* Darker blue on focus */
+}
+
+/* Add hover effect */
+.form-group select#doctor:hover {
+  background-color: #ecf0f1;
+}
+
+/* Enhance dropdown arrow visibility */
+.form-group select#doctor {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%2334485e" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px; /* Space for arrow */
+}

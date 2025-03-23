@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make an Appointment</title>
+  <link rel="stylesheet" href="./css/appointment.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="./appointment/home.html">Home</a></li>
+            <li><a href="./appointment/service.html">Services</a></li>
+            <li><a href="./appointment/doctors.html">Doctors</a></li>
+            <li><a href="./appointment/contact.html">Contact</a></li>
+            <li><a href="#" class="active">Make an Appointment</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+  <main>
+    <section class="hero">
+      <h1>Schedule Your Appointment Today</h1>
+      <p>Our team of experienced medical professionals is here to provide you with the best possible care.</p>
+    </section>
+
+    <section class="appointment-form">
+      <h2>Book Your Appointment</h2>
+      <form action="appointment.php" method="post" id="appointmentform">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="doctor">Select Doctor</label>
+          <select id="doctor" name="doctor" required>
+            <option value="" disabled selected>Choose a Doctor</option>
+            <option value="Dr. John Doe - Cardiologist">Dr. John Doe - Cardiologist</option>
+            <option value="Dr. Emily Smith - Neurologist">Dr. Emily Smith - Neurologist</option>
+            <option value="Dr. Michael Brown - Orthopedic">Dr. Michael Brown - Orthopedic</option>
+            <option value="Dr. Sarah Johnson - Dermatologist">Dr. Sarah Johnson - Dermatologist</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="appointment-date">Appointment Date</label>
+          <input type="date" id="appointment-date" name="appointmentdate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="appointment-time">Appointment Time</label>
+          <input type="time" id="appointment-time" name="appointmenttime" required>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for Appointment</label>
+          <textarea id="reason" name="reason" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Book Appointment</button>
+      </form>
+
+      
+      <div id="confirmation-message" style="display:none;">
+        <h3>Appointment Confirmed!</h3>
+        <p>Thank you for booking your appointment. We will send you an email confirmation shortly.</p>
+      </div>
+   
+
+    <section class="appointment-info">
+      <h2>What to Expect</h2>
+      <p>When you arrive for your appointment, our friendly staff will greet you and guide you through the check-in process. Please bring any relevant medical records or insurance information with you.</p>
+      <p>If you have any special needs or requirements, please let us know in advance so we can accommodate you.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 California Hospital. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/appoint.js"></script>
+</body>
+</html>

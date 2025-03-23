@@ -6,9 +6,9 @@ def insert_contact(email, name, phone, message):
     try:
         conn = mysql.connector.connect(
             host="localhost",
-            user="root",
-            password="",
-            database="bse"
+            user="root",  
+            password="",  
+            database="bse"  
         )
         cursor = conn.cursor()
 
@@ -22,15 +22,15 @@ def insert_contact(email, name, phone, message):
         print("Record inserted successfully.")
     except mysql.connector.IntegrityError:
         print("Record already exists.")
+    except mysql.connector.Error as err:
+        print(f"Database error: {err}")
     except Exception as e:
         print(f"Error: {e}")
-        
     finally:
         cursor.close()
         conn.close()
 
 if __name__ == "__main__":
-    # Ensure the script is called with the correct number of arguments
     if len(sys.argv) != 5:
         print("Usage: python contact.py <email> <name> <phone> <message>")
         sys.exit(1)
